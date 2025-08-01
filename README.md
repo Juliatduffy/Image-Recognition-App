@@ -18,7 +18,7 @@ Demo Video: _Fill in Later_
 <img src="home.png" alt="Home Screen" height="400" />
 <img src="grapes-prediction.png" alt="Home Screen" height="400" />
 <img src="apple-prediction.png" alt="Home Screen" height="400" />
-<img src="banana-prediction.png" alt="Home Screen" height="400" />
+<img src="banana.png" alt="Home Screen" height="400" />
 </div>
 
 ---
