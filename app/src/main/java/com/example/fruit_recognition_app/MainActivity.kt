@@ -10,12 +10,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import org.tensorflow.lite.Interpreter
 import java.io.FileInputStream
 import java.nio.ByteBuffer
@@ -85,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun runModel(bitmap: Bitmap) {
         val input = bitmapToModelInput(bitmap)
-        val output = Array(1) { FloatArray(5) } // 5 classes
+        val output = Array(1) { FloatArray(5) }
 
         val model = Interpreter(loadModelFile("model.tflite"))
         model.run(input, output)
