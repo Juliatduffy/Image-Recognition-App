@@ -4,7 +4,7 @@ This app is able to classify five different classes of fruit: apples, bananas, g
 
 Image Classification Colab: https://colab.research.google.com/drive/1xNfVM-Js5YFXc4p4hvL2spomfsf1jnr4#scrollTo=5pxU_sTqNrZy <br>
 Web Crawler Colab: https://colab.research.google.com/drive/1BJhcCzs0V1_9vaV_vfBbnocteg6c0m5t#scrollTo=jarxKflThSDS <br>
-Demo Video: *Fill in Later*
+Demo Video: _Fill in Later_
 
 ---
 
@@ -13,17 +13,19 @@ Demo Video: *Fill in Later*
 ---
 
 ## Screenshots
+
 <div style="display: flex; gap: 10px;">
 <img src="home.png" alt="Home Screen" width="200" />
 <img src="grapes-prediction.png" alt="Home Screen" width="200" />
 <img src="apple-prediction.png" alt="Home Screen" width="200" />
+<img src="banana-prediction.png" alt="Home Screen" width="200" />
 </div>
 
 ---
 
 ## Technologies Used
 
-*Fill in later*
+_Fill in later_
 
 ---
 
