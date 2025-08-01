@@ -105,11 +105,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bitmapToModelInput(bitmap: Bitmap): Array<Array<Array<FloatArray>>> {
-        val resized = Bitmap.createScaledBitmap(bitmap, 100, 100, true)
-        val input = Array(1) { Array(100) { Array(100) { FloatArray(3) } } }
+        val resized = Bitmap.createScaledBitmap(bitmap, 180, 180, true)
+        val input = Array(1) { Array(180) { Array(180) { FloatArray(3) } } }
 
-        for (y in 0 until 100) {
-            for (x in 0 until 100) {
+        for (y in 0 until 180) {
+            for (x in 0 until 180) {
                 val pixel = resized.getPixel(x, y)
                 input[0][y][x][0] = Color.red(pixel).toFloat()  // no division
                 input[0][y][x][1] = Color.green(pixel).toFloat()
