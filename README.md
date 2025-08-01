@@ -2,8 +2,8 @@
 
 This app is able to classify five different classes of fruit: apples, bananas, grapes, oranges, and strawberries. The user can choose to take a picture in the app or upload an image from their camera roll. I built the image classification using TensorFlow, and the App using Android and Kotlin. I collected the training images using a short web-crawling script I built in Python.
 
-Image Classification Colab: https://colab.research.google.com/drive/1xNfVM-Js5YFXc4p4hvL2spomfsf1jnr4#scrollTo=5pxU_sTqNrZy
-Web Crawler Colab: https://colab.research.google.com/drive/1BJhcCzs0V1_9vaV_vfBbnocteg6c0m5t#scrollTo=jarxKflThSDS 
+Image Classification Colab: https://colab.research.google.com/drive/1xNfVM-Js5YFXc4p4hvL2spomfsf1jnr4#scrollTo=5pxU_sTqNrZy <br>
+Web Crawler Colab: https://colab.research.google.com/drive/1BJhcCzs0V1_9vaV_vfBbnocteg6c0m5t#scrollTo=jarxKflThSDS <br>
 Demo Video: *Fill in Later*
 
 ---
@@ -14,7 +14,10 @@ Demo Video: *Fill in Later*
 
 ## Screenshots
 
-<img src="apple-recognition.png" alt="Home Screen" width="100" />
+<img src="home.png" alt="Home Screen" width="200" />
+<img src="grapes-prediction.png" alt="Home Screen" width="200" />
+<img src="apple-prediction.png" alt="Home Screen" width="200" />
+
 
 ---
 
