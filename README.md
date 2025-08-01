@@ -13,11 +13,11 @@ Demo Video: *Fill in Later*
 ---
 
 ## Screenshots
-
+<div style="display: flex; gap: 10px;">
 <img src="home.png" alt="Home Screen" width="200" />
 <img src="grapes-prediction.png" alt="Home Screen" width="200" />
 <img src="apple-prediction.png" alt="Home Screen" width="200" />
-
+</div>
 
 ---
 
