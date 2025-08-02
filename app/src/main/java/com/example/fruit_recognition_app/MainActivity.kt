@@ -18,6 +18,7 @@ import java.io.FileInputStream
 import java.nio.ByteBuffer
 import java.nio.channels.FileChannel
 import android.Manifest
+import kotlin.math.abs
 
 
 class MainActivity : AppCompatActivity() {
@@ -105,7 +106,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bitmapToModelInput(bitmap: Bitmap): Array<Array<Array<FloatArray>>> {
-        val resized = Bitmap.createScaledBitmap(bitmap, 180, 180, true)
+
+        var resized = Bitmap.createScaledBitmap(bitmap, 180, 180, true)
+
+        val height = bitmap.height
+        val width = bitmap.width
+
+        if (height != width) {
+            var diff = height - width
+            val isPortrait = (diff > 0)
+            diff = abs(diff)
+            var newX = 0
+            var newY = 0
+            if(isPortrait) newY = diff/2
+            else newX = diff/2
+            val newSize = Math.min(width, height)
+            val croppedBitmap = Bitmap.createBitmap(bitmap, newX, newY, newSize, newSize)
+            resized = Bitmap.createScaledBitmap(croppedBitmap, 180, 180, true)
+        }
+
         val input = Array(1) { Array(180) { Array(180) { FloatArray(3) } } }
 
         for (y in 0 until 180) {
